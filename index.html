@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -24,6 +25,18 @@
 
     <input type="text" placeholder="Ваше ім'я?" id="name-input" />
     <h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
+
+    <input
+      type="text"
+      id="validation-input"
+      data-length="6"
+      placeholder="Введи 6 символів"
+    />
+
+    <input id="font-size-control" type="range" value="16" />
+
+    <br />
+    <span id="text">Абракадабра!</span>
 
     <script src="script.js"></script>
   </body>
