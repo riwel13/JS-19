@@ -22,7 +22,7 @@ nameEl.addEventListener("input", () => {
 const validEl = document.getElementById("validation-input");
 
 validEl.addEventListener("blur", () => {
-  if (validEl.value.length >= validEl.dataset.length) {
+  if (validEl.value.length == validEl.dataset.length) {
     validEl.classList.add("valid");
     validEl.classList.remove("invalid");
   } else {
@@ -38,5 +38,5 @@ const imputEl = document.querySelector("#font-size-control")
 const textEl = document.querySelector("#text")
 
 imputEl.addEventListener("input", () => {
-    textEl.style.fontSize = imputEl.value + px
+    textEl.style.fontSize = imputEl.value + "px"
 })
